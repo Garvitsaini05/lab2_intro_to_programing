@@ -14,6 +14,5 @@ while (i<=days):
     if initial_calorie <= 1200:
         print("You can't loose more calories")
         break
-        print()
     else:
         print("")
