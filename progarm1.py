@@ -1,22 +1,23 @@
-print("CALCULATION OF PER MONTH EXPENCES")
+print("RECORD OF TEMPERATURE")
+print("*---------------------*")
 print("")
-print("Enter the no.of years you want to calculate.!")
+print("NO. OF YEARS TO BE RECORDED")
 year=int(input(":- "))
+
 
 i=1
 total=0
 average=0
-while(i<=12):
-    monthly_expence=int(input(f"Enter month {i} Expences :- "))
 
+while(i<=year*12):
+    temp_month=int(input(f"TEMPERATUE FOR  {i}  MONTH :- "))
     i=i+1
-    total=total+monthly_expence
+    total=total+temp_month
     average=total/(year*12)
-    
+    average2=total/(year)
+
 
 print("------------------------------")
 
-
-print("your", year, "year average is :- ", average)
-
-
+print("YEARLY AVERAGE TEMPERATURE :- ", average2)
+print("TOTAL AVERAGE TEMPERATUER IS :- ", average)
